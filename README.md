@@ -31,8 +31,6 @@ Estou constantemente atualizando meus conhecimentos e buscando novos desafios na
 
 
 </div>
-
-
 name: Generate Snake
 
 on:
