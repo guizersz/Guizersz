@@ -33,5 +33,39 @@ Estou constantemente atualizando meus conhecimentos e buscando novos desafios na
 </div>
 
 
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Executa diariamente à meia-noite
+
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate the snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: Guizersz
+          outputs: dist/snake.svg
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: snake
+          path: dist/snake.svg
+
+      - name: Push to the output branch
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
