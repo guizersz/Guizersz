@@ -23,7 +23,10 @@ Estou constantemente atualizando meus conhecimentos e buscando novos desafios na
 [![Instagram](https://img.shields.io/badge/-Instagram-000?style=for-the-badge&logo=instagram&logoColor=FF00F6&color:FFF)](https://www.instagram.com/guilhermeleonesz/)
 
 
-<h3 align="left">Conhecimentos em: ~</h3>
+<h3 align="left">Conhecimentos em: <h3 align="left">
+  Conhecimentos em: <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" width="50">
+</h3>
+
   
 
 
